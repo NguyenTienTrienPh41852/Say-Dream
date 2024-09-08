@@ -80,6 +80,7 @@ public class ActivityLogin extends AppCompatActivity {
                     Toast.makeText(ActivityLogin.this, R.string.IsEmpty, Toast.LENGTH_SHORT).show();
                     HideProgressDialog();
                     return;
+                    
                 }
                 mAuth.sendPasswordResetEmail(email)
                         .addOnCompleteListener(new OnCompleteListener<Void>() {
